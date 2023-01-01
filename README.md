@@ -14,11 +14,7 @@ $$w_{ij} = \frac{1}{N} \sum_{i=1}^M \xi_{i}^{\mu}\xi_{j}^{\mu} - \frac{M}{N}\del
 
 or in the matrix form
 
-$$
-\begin{equation}
-\textbf{W} = \frac{1}{N} \sum_{i=1}^M \bf{\xi}\bf{\xi}^T - \frac{M}{N}I_N
-\end{equation}
- $$
+$$ \begin{equation} \textbf{W} = \frac{1}{N} \sum_{i=1}^M \bf{\xi}\bf{\xi}^T - \frac{M}{N} \textbf{I}_N \end{equation}$$
 
 3. Initializing Process
 4. Iteration
