@@ -16,7 +16,7 @@ or in the matrix form
 
 $$
 \begin{equation}
-\textb{W} = \frac{1}{N} \sum_{i=1}^M \bf{\xi}\bf{\xi}^T - \frac{M}{N}I_N
+\textbf{W} = \frac{1}{N} \sum_{i=1}^M \bf{\xi}\bf{\xi}^T - \frac{M}{N}I_N
 \end{equation}
  $$
 
