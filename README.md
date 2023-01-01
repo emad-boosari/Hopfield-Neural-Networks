@@ -1,6 +1,7 @@
 # Hopfield Neural Networks
 A Hopfield neural network (or *Ising model* of a neural network) is a form of artificial *recurrent neural networks* (__RNN__) and a type of **spin glass** system popularised by **John Hopfield** in 1982. Hopfield networks serve as `content-addressable ("associative") memory` systems with binary threshold nodes, or with continuous variables.
 
+![image](https://user-images.githubusercontent.com/58440271/210186665-f1b38c39-d142-4964-9788-5bb375abf561.png)
 
 
 Here I am going to focus on the discrete Hopfield Neural Networks (HNNs) because of some future quantum computation showcases.
