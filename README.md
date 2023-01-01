@@ -10,11 +10,11 @@ The HNN can be summerized using the following simple four-steps algorithm.
 
 1. Memorizing Process
 Let me consider patterns $\bf{\xi}^1$, $\xi^2, \ldots, \xi^M$, are $N$-dimensional prototype patterns. Then we can easily memorize them inside the synaptic weights ${w_{ij}}$ by using **Hebb's learning rule**
-$$w_{ij} = \frac{1}{N} \sum_{i=1}^M \xi_{i}^{\mu}\xi_{j}^{\mu} - \frac{M}{N}\delta_{ij}$$
+$$w_{ij} = \frac{1}{N} \sum_{\mu=1}^M \xi_{i}^{\mu}\xi_{j}^{\mu} - \frac{M}{N}\delta_{ij}$$
 
 or in the matrix form
 
-$$ \begin{equation} \textbf{W} = \frac{1}{N} \sum_{i=1}^M \bf{\xi}\bf{\xi}^T - \frac{M}{N} \textbf{I}_N \end{equation}$$
+$$ \begin{equation} \textbf{W} = \frac{1}{N} \sum_{\mu=1}^M \bf{\xi_{\mu}}\bf{\xi_{\mu}}^T - \frac{M}{N} \textbf{I}_N \end{equation}$$
 
 3. Initializing Process
 4. Iteration
