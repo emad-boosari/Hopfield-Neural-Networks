@@ -14,8 +14,10 @@ $$w_{ij} = \frac{1}{N} \sum_{\mu=1}^M \xi_{i}^{\mu}\xi_{j}^{\mu} - \frac{M}{N}\d
 
 or in the matrix form
 
-$$ \begin{equation} \textbf{W} = \frac{1}{N} \sum_{\mu=1}^M \bf{\xi_{\mu}}\bf{\xi_{\mu}}^T - \frac{M}{N} \textbf{I}_N \end{equation}$$
-
+$$ \begin{equation} \textbf{W} = \frac{1}{N} \sum_{\mu=1}^M \bf{\xi^{\mu}}(\bf{\xi^{\mu}})^T - \frac{M}{N} \textbf{I}_N \end{equation}$$
+where $\textbf{I}_n$ is the $N\times N$ identity matrix. Once computed, the synaptic weights remain fixed.
 3. Initializing Process
-4. Iteration
-5. Result
+
+
+5. Iteration
+6. Result
