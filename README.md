@@ -59,5 +59,5 @@ or patterns missing information can then be tested using the above algorithm. Th
 2. The network converges to a spurious steady state. Spurious steady states include the following:
    * (a) __Reversed fundamental memories__— e.g., if $x_f$ is a fundamental memory, then so is $−xf$.
    * (b) __Mixed fundamental memories__— a linear combination of fundamental memories.
-   * (c) Spin-glass states—local minima not correlated with any fundamental memories.
+   * (c) __Spin-glass states__—local minima not correlated with any fundamental memories.
 Before looking at an application of a Hopfield network as a content-addressable memory, a simple example is shown below to illustrate the algorithm.
