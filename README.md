@@ -27,7 +27,7 @@ Let $x_p$ denote the unknown probe vector to be tested. The algorithm is initial
 
 $$ x_i(0) = x_{ip} $$
 
-where $xi(0)$ is the state of neuron $i$ at time $n = 0$, $x_{ip}$ is the $i$th element of vector $x_p$, and $N$ is the number of neurons.
+where $x_i(0)$ is the state of neuron $i$ at time $n = 0$, $x_{ip}$ is the $i$th element of vector $x_p$, and $N$ is the number of neurons.
 
 
 3. Iteration
