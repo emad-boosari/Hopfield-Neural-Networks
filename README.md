@@ -36,16 +36,9 @@ $$x_i(t+1) = hsgn\Bigg(\sum_{j=1}^N w_{ij}x_j(t) \Bigg) \qquad\qquad i= 0,1,\ldo
 
 where
 
-$$
-hsgn\Big(v_i(t+1)\Big) = \Bigg\{
-\begin{matrix}
-1 \qquad v_i(t+1)>0\\
-x_i(n) \qquad v_i(t+1) = 0\\
--1 \qquad v_i(t+1)<0
-\end{matrix}
-$$
+$$ hsgn\Big(v_i(t+1)\Big) = \Bigg\{\begin{matrix} 1 \qquad v_i(t+1)>0\\ x_i(n) \qquad v_i(t+1) = 0\\ -1 \qquad v_i(t+1)<0  \end{matrix} $$
 
-and $v_i(t + 1) = \sum_{j=1}^N  w_{ij}x_j(n)$. The iterations are repeated until the vector converges to a stable value. Note that at least $N$ iterations are
+and $v_i(t+1) = \sum_{j=1}^N w_{ij} x_j(n)$. The iterations are repeated until the vector converges to a stable value. Note that at least $N$ iterations are
 carried out to guarantee convergence. 
 
 4. Result
