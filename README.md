@@ -21,7 +21,13 @@ $$
 
 where $\textbf{I}_n$ is the $N\times N$ identity matrix. Once computed, the synaptic weights remain fixed.
 
-2. Initializing
+2. Initialization
+
+Let $x_p$ denote the unknown probe vector to be tested. The algorithm is initialized by setting
+
+$$ x_i(0) = x_{ip} $$
+
+where $xi(0)$ is the state of neuron $i$ at time $n = 0$, $x_{ip}$ is the $i$th element of vector $x_p$, and $N$ is the number of neurons.
 
 
 3. Iteration
