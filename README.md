@@ -34,9 +34,30 @@ where $x_i(0)$ is the state of neuron $i$ at time $n = 0$, $x_{ip}$ is the $i$th
 The elements are updated asynchronously (i.e., one at a time in a random order) according to the rule
 $$x_i(t+1) = hsgn\Bigg(\sum_{j=1}^N w_{ij}x_j(t) \Bigg) \qquad\qquad i= 0,1,\ldots N$$
 
+where
 
+$$ hsgn\Big(v_i(t+1)\Big) = \Bigg\{
+\begin{matrix}
+1 \qquad v_i(t+1)>0\\
+x_i(n) \qquad v_i(t+1) = 0\\
+-1 \qquad v_i(t+1)<0
+\end{matrix}
+$$
 
-![image](https://user-images.githubusercontent.com/58440271/210186627-d16ce316-a309-450c-b96b-ac230b400268.png)
-
+and $v_i(t + 1) = \sum^N_{j=1}  w_{ij}x_j(n)$. The iterations are repeated until the vector converges to a stable value. Note that at least $N$ iterations are
+carried out to guarantee convergence. 
 
 4. Result
+
+The stable vector, say, $x_{fixed}$, is the result.
+
+The algorithm above uses _asynchronous updating_ of synaptic weights. _Synchronous updating_ is the procedure by which weights are updated __simultaneously__. The fundamental memories should first be presented to the Hopfield
+network. This tests the network’s ability to recover the stored vectors using
+the computed synaptic weight matrix. The desired patterns should be recovered after one iteration; if not, then an error has been made. Distorted patterns
+or patterns missing information can then be tested using the above algorithm. There are two possible outcomes.
+1. The network converges to one of the fundamental memories.
+2. The network converges to a spurious steady state. Spurious steady states include the following:
+   * (a) __Reversed fundamental memories__— e.g., if $x_f$ is a fundamental memory, then so is $−xf$.
+   * (b) __Mixed fundamental memories__— a linear combination of fundamental memories.
+   * (c) Spin-glass states—local minima not correlated with any fundamental memories.
+Before looking at an application of a Hopfield network as a content-addressable memory, a simple example is shown below to illustrate the algorithm.
