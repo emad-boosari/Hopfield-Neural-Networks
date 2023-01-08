@@ -47,7 +47,7 @@ x_i(n) \qquad v_i(t+1) = 0\\
 \end{equation}
 $$
 
-and $v_i(t+1) =$ $\sum_{j=1}^N w_{ij} x_j(n)$. The iterations are repeated until the vector converges to a stable value. Note that at least $N$ iterations are
+and $v_i(t+1) = \sum w_{ij} x_j(t)$. The iterations are repeated until the vector converges to a stable value. Note that at least $N$ iterations are
 carried out to guarantee convergence. 
 
 4. Result
