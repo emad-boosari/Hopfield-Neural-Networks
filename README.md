@@ -17,7 +17,7 @@ or in the matrix form
 
 $$
 \begin{equation}
-\textbf{W} = \frac{1}{N} \sum_{\mu=1}^M \textbf{\xi^{\mu}}(\textbf{\xi^{\mu}})^T - \frac{M}{N} \textbf{I}_N 
+\textbf{W} = \frac{1}{N} \sum_{\mu=1}^M \mathbf{\xi^{\mu}}(\bf{\xi^{\mu}})^T - \frac{M}{N} \textbf{I}_N 
 \end{equation}
 $$
 
