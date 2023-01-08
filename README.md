@@ -37,7 +37,11 @@ $$x_i(t+1) = hsgn\Bigg(\sum_{j=1}^N w_{ij}x_j(t) \Bigg) \qquad\qquad i= 0,1,\ldo
 where
 
 $$
-\Bigg\{$$
+\Bigg\{\begin{tabular}{c}
+1 \\
+2 
+\end{tabular}
+$$
 
 $$
 \begin{matrix}
