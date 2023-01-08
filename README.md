@@ -7,6 +7,7 @@ Here I am going to focus on the discrete Hopfield Neural Networks (HNNs) because
 The HNN can be summerized using the following simple four-steps algorithm.
 
 1. Memorizing Process
+
 Let me consider patterns $\vec{\xi}^1$, $\vec{\xi^2}$, $\ldots$, $\vec{\xi^M}$, are $N$-dimensional prototype patterns (vectors/states). Then we can easily memorize them inside the synaptic weights ${w_{ij}}$ by using **Hebb's learning rule**
 $$w_{ij} = \frac{1}{N} \sum_{\mu=1}^M \xi_{i}^{\mu}\xi_{j}^{\mu} - \frac{M}{N}\delta_{ij}$$
 
@@ -19,11 +20,11 @@ $$
 $$
 
 where $\textbf{I}_n$ is the $N\times N$ identity matrix. Once computed, the synaptic weights remain fixed.
-3. Initializing
 
-$boldsymbol{\xi}$
+2. Initializing
 
-5. Iteration
+
+3. Iteration
 The elements are updated asynchronously (i.e., one at a time in a random order) according to the rule
 
 ![image](https://user-images.githubusercontent.com/58440271/210186636-d2c99574-09ec-4a41-a1f2-8420ee5b00de.png)
@@ -32,4 +33,4 @@ The elements are updated asynchronously (i.e., one at a time in a random order) 
 ![image](https://user-images.githubusercontent.com/58440271/210186627-d16ce316-a309-450c-b96b-ac230b400268.png)
 
 
-7. Result
+4. Result
