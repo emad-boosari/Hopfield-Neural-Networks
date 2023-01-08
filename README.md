@@ -23,7 +23,7 @@ where $\textbf{I}_n$ is the $N\times N$ identity matrix. Once computed, the syna
 
 2. Initialization
 
-Let $x_p$ denote the unknown probe vector to be tested. The algorithm is initialized by setting
+Let $x_p$ denote the unknown __probe vector__ (input vector/test vector) to be tested. The algorithm is initialized by setting
 
 $$ x_i(0) = x_{ip} $$
 
@@ -32,7 +32,7 @@ where $x_i(0)$ is the state of neuron $i$ at time $n = 0$, $x_{ip}$ is the $i$th
 
 3. Iteration
 The elements are updated asynchronously (i.e., one at a time in a random order) according to the rule
-
+$$x_i(t+1) = hsgn\Bigg(\sum_{j=1}^N w_{ij}x_j(n) \Bigg)$$
 ![image](https://user-images.githubusercontent.com/58440271/210186636-d2c99574-09ec-4a41-a1f2-8420ee5b00de.png)
 
 
