@@ -36,7 +36,9 @@ $$x_i(t+1) = hsgn\Bigg(\sum_{j=1}^N w_{ij}x_j(t) \Bigg) \qquad\qquad i= 0,1,\ldo
 
 where
 
-$$ ![image](https://user-images.githubusercontent.com/58440271/211214849-69a53a94-3fee-46f9-9eca-acf46d279c32.png) $$
+\begin{figure}
+![image](https://user-images.githubusercontent.com/58440271/211214849-69a53a94-3fee-46f9-9eca-acf46d279c32.png) 
+\end{figure}
 
 and $v_i(t+1) = \sum w_{ij} x_j(t)$. The iterations are repeated until the vector converges to a stable value. Note that at least $N$ iterations are
 carried out to guarantee convergence. 
